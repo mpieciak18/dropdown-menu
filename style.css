@@ -1,0 +1,40 @@
+.dropdown-container {
+    display: inline-block;
+  }
+  .dropdown-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    background: lightgrey;
+    border: 2px grey solid;
+    border-radius: 5px;
+    margin: 5px 5px 0px 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-arrow {
+    font-size: large;
+    color: #555;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .dropdown-menu {
+    background: lightgrey;
+    border: 2px grey solid;
+    border-top: 0px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0px 5px;
+    transition: height 0.5s, visibility 0.5s;
+    height: 0px;
+    visibility: hidden;
+  }
+  
+  .dropdown-menu.visible {
+    height: 400px;
+    visibility: visible;
+  }
